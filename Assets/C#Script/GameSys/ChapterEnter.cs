@@ -21,7 +21,7 @@ public class ChapterEnter : MonoBehaviour
     {
             if(Input.GetKey(KeyCode.Space)){
                 Debug.Log("하하하");
-                SceneManager.LoadScene("1");
+                SceneManager.LoadScene(ChNum);
             }
     }
 

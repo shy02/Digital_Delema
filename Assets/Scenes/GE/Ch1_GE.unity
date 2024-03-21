@@ -175,9 +175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Img:
-  - {fileID: 398270571, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
-  - {fileID: -299302816, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
+  - {fileID: -4240589856232893966, guid: d3fa5867e9cd00043a98897236539745, type: 3}
+  - {fileID: 1452021817428767745, guid: d3fa5867e9cd00043a98897236539745, type: 3}
   ImgDelay: 2
+  isStart: 0
 --- !u!114 &533332233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1056807234, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
+  m_Sprite: {fileID: 4892669241448160446, guid: d3fa5867e9cd00043a98897236539745, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

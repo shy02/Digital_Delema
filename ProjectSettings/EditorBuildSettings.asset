@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -29,6 +29,42 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StageSelet.unity
     guid: d1e934b34bdc1dd45a8dfd730eca2e19
+  - enabled: 1
+    path: Assets/Scenes/Startani/2.unity
+    guid: 693c462d0da3b00449c8956df62973cb
+  - enabled: 1
+    path: Assets/Scenes/Startani/3.unity
+    guid: 10beef1d8c5a94a4994025736865ebbe
+  - enabled: 1
+    path: Assets/Scenes/BE/Ch2_BE.unity
+    guid: 48bd3ba4e2ad3ab49b7285be3fe88c00
+  - enabled: 1
+    path: Assets/Scenes/BE/Ch3_BE.unity
+    guid: 2fc7dbe73b985ce4c9809aecb8df79e0
+  - enabled: 1
+    path: Assets/Scenes/BE/Ch4_BE.unity
+    guid: 36d25f0e852f07f4c83ce3f0bd206f83
+  - enabled: 1
+    path: Assets/Scenes/Startani/4.unity
+    guid: 27362ad7ef4b2d9449d142765c0417f5
+  - enabled: 1
+    path: Assets/Scenes/GE/Ch2_GE.unity
+    guid: e728b7351467a374c83b57a88d680b47
+  - enabled: 1
+    path: Assets/Scenes/GE/Ch3_GE.unity
+    guid: 23d03ec3765894b4d9606d880502fef9
+  - enabled: 1
+    path: Assets/Scenes/GE/Ch4_GE.unity
+    guid: b6f5e8cd7e1f00b4caea0ff8e7bea411
+  - enabled: 1
+    path: Assets/Scenes/GE/Ch5_GE.unity
+    guid: 0c5ebf2c7f1ac2848babe15a38c1b905
+  - enabled: 1
+    path: Assets/Scenes/Startani/5.unity
+    guid: d4076f7b8d916294ea1506f474162583
+  - enabled: 1
+    path: Assets/Scenes/Init.unity
+    guid: 8ee5c98a519d01242859676cd9efc022
   - enabled: 1
     path: Assets/Scenes/Startani/1.unity
     guid: 71169f37bb5b24743bbc97870d6df139

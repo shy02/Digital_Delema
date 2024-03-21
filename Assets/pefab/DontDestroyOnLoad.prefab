@@ -128,7 +128,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5602719400722593725}
         m_TargetAssemblyTypeName: C_SetVolume, Assembly-CSharp
         m_MethodName: BGMControl
         m_Mode: 1
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5602719400722593725}
         m_TargetAssemblyTypeName: C_SetVolume, Assembly-CSharp
         m_MethodName: MasterControl
         m_Mode: 1
@@ -774,6 +774,7 @@ Transform:
   m_Children:
   - {fileID: 720002008233157710}
   - {fileID: 720002010210396448}
+  - {fileID: 5602719400722593724}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1943,7 +1944,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5602719400722593725}
         m_TargetAssemblyTypeName: C_SetVolume, Assembly-CSharp
         m_MethodName: SFXControl
         m_Mode: 1
@@ -2478,3 +2479,88 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &2292784202713495968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 720002008977082534}
+    m_Modifications:
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913578746712886813, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: BGMSlider
+      value: 
+      objectReference: {fileID: 720002008228841921}
+    - target: {fileID: 5913578746712886813, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: SFXSlider
+      value: 
+      objectReference: {fileID: 720002009944953090}
+    - target: {fileID: 5913578746712886813, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: MasterSlider
+      value: 
+      objectReference: {fileID: 720002008235087715}
+    - target: {fileID: 5913578746712886814, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+--- !u!4 &5602719400722593724 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5913578746712886812, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+  m_PrefabInstance: {fileID: 2292784202713495968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5602719400722593725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5913578746712886813, guid: 03a0c55828b569f4bba5a7e57b9b22ef, type: 3}
+  m_PrefabInstance: {fileID: 2292784202713495968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76581d788dadb68429de65ad48c4a447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

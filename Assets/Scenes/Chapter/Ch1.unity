@@ -943,7 +943,7 @@ MonoBehaviour:
   timer: {fileID: 1493925782}
   Came: {fileID: 519420031}
   T_count: {fileID: 189203758}
-  audio: {fileID: 1004076998}
+  ClickSound: {fileID: 0}
 --- !u!4 &1008503155
 Transform:
   m_ObjectHideFlags: 0

@@ -26,7 +26,7 @@ public class NextImage : MonoBehaviour
             SceneManager.LoadScene("Ch"+SceneManager.GetActiveScene().name);//CH + 챕터 숫자 = 씬으로 불러오기
             }
             else {
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("StageSelet");
             }
         }else{
         StoryImage.sprite = Img[i];

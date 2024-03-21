@@ -27,6 +27,7 @@ public class C_MousePosition : MonoBehaviour
 
     void Start(){
         T_count.text = ("0/" + MaxCheckCount);
+        ClickSound = GameObject.Find("DontDestroyOnLoad").transform.GetChild(2).transform.GetChild(1).GetComponent<AudioSource>();
     }
     
     void Update()
