@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class C_DontDestroyOnLoad : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Awake(){
+        DontDestroyOnLoad(gameObject);
     }
 }
