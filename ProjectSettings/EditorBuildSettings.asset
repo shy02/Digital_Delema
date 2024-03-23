@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Startani/1.unity
     guid: 71169f37bb5b24743bbc97870d6df139
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: f5668f5468350a74a91385068d0184ac
   m_configObjects: {}

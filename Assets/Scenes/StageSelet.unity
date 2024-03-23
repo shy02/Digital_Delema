@@ -3155,6 +3155,10 @@ PrefabInstance:
       propertyPath: m_Bounds.m_Extent.y
       value: 5.426916
       objectReference: {fileID: 0}
+    - target: {fileID: 1579595434995840752, guid: a407edc5e7b377b459c5e1b56af7859f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5213917381172386451, guid: a407edc5e7b377b459c5e1b56af7859f, type: 3}
       propertyPath: m_Bounds.m_Center.y
       value: 11.292875
@@ -3189,7 +3193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6252598859966221648, guid: a407edc5e7b377b459c5e1b56af7859f, type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6573381516265733379, guid: a407edc5e7b377b459c5e1b56af7859f, type: 3}
       propertyPath: m_RootOrder
@@ -3265,7 +3269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077922924789893370, guid: a407edc5e7b377b459c5e1b56af7859f, type: 3}
       propertyPath: m_SortingOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8984736289877994843, guid: a407edc5e7b377b459c5e1b56af7859f, type: 3}
       propertyPath: m_Bounds.m_Center.x

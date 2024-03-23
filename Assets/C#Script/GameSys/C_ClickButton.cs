@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class C_ClickButton : MonoBehaviour
 {
@@ -22,6 +23,6 @@ public class C_ClickButton : MonoBehaviour
         isopdisplay = false;
     }
     public void Return_Main(){
-        
+        SceneManager.LoadScene("Start");
     }
 }

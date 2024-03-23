@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] C_Timer timer;
     [SerializeField] C_FadeInOUT fade;
     [SerializeField] C_MousePosition MsPos;
+    public AudioSource Clear;
 
     void Start(){
         StartCoroutine("WaitGame");
