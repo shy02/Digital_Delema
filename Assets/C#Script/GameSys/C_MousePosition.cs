@@ -22,19 +22,16 @@ public class C_MousePosition : MonoBehaviour
     [SerializeField] C_Timer timer;
     [SerializeField] Camera Came;
     [SerializeField] Text T_count;
-    [SerializeField] AudioSource ClickSound;
     Vector2 MPosition;
 
     void Start(){
         T_count.text = ("0/" + MaxCheckCount);
-        ClickSound = GameObject.Find("DontDestroyOnLoad").transform.GetChild(2).transform.GetChild(1).GetComponent<AudioSource>();
     }
     
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
-            ClickSound.Play();
             MPosition = Input.mousePosition;
             MPosition = Camera.main.ScreenToWorldPoint(MPosition);
 
