@@ -16,6 +16,10 @@ public class MainCamera_Move : MonoBehaviour
 
     Vector3 Camera_Pos;
 
+    void Start(){
+        Target = GameObject.Find("DontDestroyOnLoad").transform.GetChild(0).gameObject;
+    }
+
     private void FixedUpdate()
     {
         float Ylimit;

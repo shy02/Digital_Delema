@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class C_MousePosition : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class C_MousePosition : MonoBehaviour
     [SerializeField] List<Vector2> second_point= new List<Vector2>();
     [Tooltip("정답 표시 아이콘 > 0 = 1, 1 = 2...")]
     [SerializeField] List<GameObject> RightSign = new List<GameObject>();
+    [Header ("Sounds")]
+    AudioSource Audio;
+    [SerializeField] AudioClip ClearSounds;
     [Header ("INIT")]
     [SerializeField] GameManager Gm;
     [SerializeField] C_Timer timer;
@@ -26,6 +30,7 @@ public class C_MousePosition : MonoBehaviour
 
     void Start(){
         T_count.text = ("0/" + MaxCheckCount);
+        Audio = Gm.Clear;
     }
     
     void Update()
@@ -44,7 +49,7 @@ public class C_MousePosition : MonoBehaviour
             }
         }
         
-        if(MaxCheckCount == CheckCount){
+        if(MaxCheckCount == CheckCount && Gm.GameStart){
             Gm.GameStart = false;
             StartCoroutine("ClearGame");
         }
@@ -64,7 +69,9 @@ public class C_MousePosition : MonoBehaviour
         }
     }
     IEnumerator ClearGame(){
-        yield return new WaitForSeconds(1f);
+        Audio.clip = ClearSounds;
+        Audio.Play();
+        yield return new WaitForSeconds(3.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name +"_GE");
     }
 }

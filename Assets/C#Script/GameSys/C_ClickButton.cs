@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class C_ClickButton : MonoBehaviour
 {
     [SerializeField] GameObject optionUI;
-    bool isopdisplay = false;
+    public bool isopdisplay = false;
     public void OptionButton(){
         if(isopdisplay){
             optionUI.SetActive(false);
@@ -22,6 +23,9 @@ public class C_ClickButton : MonoBehaviour
         isopdisplay = false;
     }
     public void Return_Main(){
-        
+        SceneManager.LoadScene("Start");
+    }
+    public void ExitGame(){
+        Application.Quit();
     }
 }

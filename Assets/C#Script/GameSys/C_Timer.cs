@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class C_Timer : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class C_Timer : MonoBehaviour
     public float MaxTime;//초(sec)단위
     public float currentTime = 0f;//초(sec)단위
     float Addtime;
+    [Header ("Sounds")]
+    AudioSource Audio;
+    [SerializeField] AudioClip ClearSounds;
     [Header ("INIT")]
     [SerializeField] GameManager Gm;
 
@@ -21,6 +25,7 @@ public class C_Timer : MonoBehaviour
     void Start(){
         rect = this.GetComponent<RectTransform>();
         Addtime = 360f / MaxTime;
+        Audio = Gm.Clear;
     }
     void Update()
     {
@@ -30,10 +35,16 @@ public class C_Timer : MonoBehaviour
           rect.Rotate(new Vector3(0,0,-Time.deltaTime * Addtime));//최종값 360
           filcycle.fillAmount = currentTime / MaxTime;
          }
-        else{
+        else if(GameStart){
             Gm.GameStart = false;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name+"_BE");
+            StartCoroutine("FailGame");
          }
         }
+    }
+    IEnumerator FailGame(){
+            Audio.clip = ClearSounds;
+            Audio.Play();
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name+"_BE");
     }
 }

@@ -175,10 +175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Img:
-  - {fileID: 1894157302, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
-  - {fileID: -1182068949, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
-  - {fileID: 555876318, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
-  - {fileID: 1167424874, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
+  - {fileID: -7631727540849460230, guid: 415be8f7bb9e9e14da4d321eb83c0063, type: 3}
+  - {fileID: -8244312671419819584, guid: 415be8f7bb9e9e14da4d321eb83c0063, type: 3}
+  - {fileID: 7947734088245990641, guid: 415be8f7bb9e9e14da4d321eb83c0063, type: 3}
+  - {fileID: 7290294093139245353, guid: 415be8f7bb9e9e14da4d321eb83c0063, type: 3}
   ImgDelay: 2
   isStart: 1
 --- !u!114 &533332233
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 441754034, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
+  m_Sprite: {fileID: 4897705722243102537, guid: 415be8f7bb9e9e14da4d321eb83c0063, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -381,7 +381,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_TargetDisplay: 0
 --- !u!224 &1565736934
 RectTransform:
