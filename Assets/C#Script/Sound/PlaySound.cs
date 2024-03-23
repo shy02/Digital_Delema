@@ -11,12 +11,18 @@ public class PlaySound : MonoBehaviour
     [SerializeField] AudioSource ClickSound;
     [SerializeField] AudioSource BGM;
     [SerializeField] List<AudioClip> sounds;
+    [Header ("Other")]
+    [Tooltip ("사운드랑 상관없지만 기능 우려먹을려고 넣음")]
+    [SerializeField] C_ClickButton clickbtn;
     void Awake(){
         recentStage = SceneManager.GetActiveScene().name;
     }
     void Update()
     {
         if(recentStage != SceneManager.GetActiveScene().name){
+            if(clickbtn.isopdisplay){
+                clickbtn.OptionButton();
+            }
             ChangeStageBGM();
             recentStage = SceneManager.GetActiveScene().name;
         }
@@ -50,6 +56,10 @@ public class PlaySound : MonoBehaviour
             break;
             case "1": case "2": case "3": case "4": 
             BGM.clip = sounds[5];
+            BGM.Play();
+            break;
+            case "5":
+            BGM.clip = sounds[6];
             BGM.Play();
             break;
         }

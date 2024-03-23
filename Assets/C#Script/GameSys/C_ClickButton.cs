@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class C_ClickButton : MonoBehaviour
 {
     [SerializeField] GameObject optionUI;
-    bool isopdisplay = false;
+    public bool isopdisplay = false;
     public void OptionButton(){
         if(isopdisplay){
             optionUI.SetActive(false);
@@ -24,5 +24,8 @@ public class C_ClickButton : MonoBehaviour
     }
     public void Return_Main(){
         SceneManager.LoadScene("Start");
+    }
+    public void ExitGame(){
+        Application.Quit();
     }
 }

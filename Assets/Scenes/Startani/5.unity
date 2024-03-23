@@ -175,12 +175,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Img:
-  - {fileID: 1894157302, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
-  - {fileID: -1182068949, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
-  - {fileID: 555876318, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
-  - {fileID: 1167424874, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
+  - {fileID: -6524220461932069272, guid: f51baede51bb7354f81753d7e036388e, type: 3}
+  - {fileID: -8275015446815450067, guid: f51baede51bb7354f81753d7e036388e, type: 3}
+  - {fileID: -220612089053830062, guid: f51baede51bb7354f81753d7e036388e, type: 3}
+  - {fileID: 3431125179749359839, guid: f51baede51bb7354f81753d7e036388e, type: 3}
+  - {fileID: 6622531856919413654, guid: f51baede51bb7354f81753d7e036388e, type: 3}
+  - {fileID: -8375180942287135458, guid: f51baede51bb7354f81753d7e036388e, type: 3}
+  - {fileID: 3558363621313466101, guid: f51baede51bb7354f81753d7e036388e, type: 3}
+  - {fileID: 15695220307090214, guid: f51baede51bb7354f81753d7e036388e, type: 3}
+  - {fileID: -2773044793732571194, guid: f51baede51bb7354f81753d7e036388e, type: 3}
   ImgDelay: 2
-  isStart: 1
+  isStart: 0
 --- !u!114 &533332233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 441754034, guid: 12770cfbf88bc7c4ca10c96cdc22519f, type: 3}
+  m_Sprite: {fileID: -1000823959583366889, guid: f51baede51bb7354f81753d7e036388e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -381,7 +386,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_TargetDisplay: 0
 --- !u!224 &1565736934
 RectTransform:
