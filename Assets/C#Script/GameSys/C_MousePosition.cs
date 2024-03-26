@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using UnityEngine.Audio;
 
 public class C_MousePosition : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class C_MousePosition : MonoBehaviour
     [SerializeField] List<GameObject> RightSign = new List<GameObject>();
     [Header ("Sounds")]
     AudioSource Audio;
+    Slider BGM_slider;
+    float BGM_val;
+    [SerializeField] AudioMixer Sound;
     [SerializeField] AudioClip ClearSounds;
     [Header ("INIT")]
     [SerializeField] GameManager Gm;
@@ -31,6 +35,7 @@ public class C_MousePosition : MonoBehaviour
     void Start(){
         T_count.text = ("0/" + MaxCheckCount);
         Audio = Gm.Clear;
+        BGM_slider = GameObject.Find("DontDestroyOnLoad").transform.GetChild(1).GetChild(1).GetChild(4).gameObject.GetComponent<Slider>();
     }
     
     void Update()
@@ -69,9 +74,12 @@ public class C_MousePosition : MonoBehaviour
         }
     }
     IEnumerator ClearGame(){
+        BGM_val = BGM_slider.value;
         Audio.clip = ClearSounds;
+        Sound.SetFloat("BGM", -80f);
         Audio.Play();
         yield return new WaitForSeconds(3.5f);
+        Sound.SetFloat("BGM", BGM_val);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name +"_GE");
     }
 }

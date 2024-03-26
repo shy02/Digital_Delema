@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using UnityEngine.Audio;
 
 public class C_Timer : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class C_Timer : MonoBehaviour
     float Addtime;
     [Header ("Sounds")]
     AudioSource Audio;
+    Slider BGM_slider;
+    float BGM_val;
+    [SerializeField] AudioMixer Sound;
+
     [SerializeField] AudioClip ClearSounds;
     [Header ("INIT")]
     [SerializeField] GameManager Gm;
@@ -26,6 +31,9 @@ public class C_Timer : MonoBehaviour
         rect = this.GetComponent<RectTransform>();
         Addtime = 360f / MaxTime;
         Audio = Gm.Clear;
+
+        
+        BGM_slider = GameObject.Find("DontDestroyOnLoad").transform.GetChild(1).GetChild(1).GetChild(4).gameObject.GetComponent<Slider>();
     }
     void Update()
     {
@@ -42,9 +50,12 @@ public class C_Timer : MonoBehaviour
         }
     }
     IEnumerator FailGame(){
+            BGM_val = BGM_slider.value;
             Audio.clip = ClearSounds;
+            Sound.SetFloat("BGM", -80f);
             Audio.Play();
         yield return new WaitForSeconds(2f);
+        Sound.SetFloat("BGM", BGM_val);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name+"_BE");
     }
 }

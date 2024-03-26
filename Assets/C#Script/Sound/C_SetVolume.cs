@@ -11,6 +11,7 @@ public class C_SetVolume : MonoBehaviour
     [SerializeField]Slider MasterSlider;
     [SerializeField]Slider BGMSlider;
     [SerializeField]Slider SFXSlider;
+    
 
     public void MasterControl()
     {
